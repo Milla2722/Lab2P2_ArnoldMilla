@@ -7,11 +7,11 @@ public class Lab2P2_ArnoldMilla {
 
     
     public static void main(String[] args) {
-        int opc = Integer.parseInt(JOptionPane.showInputDialog(null, "---Ménu---"
-                + "1. Listar Recursos"
-                + "2. Crear Recurso"
-                + "3. Eliminar Recurso"
-                + "4. Modificar Recurso"
+        int opc = Integer.parseInt(JOptionPane.showInputDialog(null, "-----------Ménu----------\n"
+                + "1. Listar Recursos \n"
+                + "2. Crear Recurso \n"
+                + "3. Eliminar Recurso \n"
+                + "4. Modificar Recurso \n"
                 + "5. Salir"));
         while (opc != 5){
             switch (opc){
