@@ -1,20 +1,43 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package lab2p2_arnoldmilla;
+import java.util.*;
+import javax.swing.JOptionPane;
 
-/**
- *
- * @author amill
- */
+
 public class Lab2P2_ArnoldMilla {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        int opc = Integer.parseInt(JOptionPane.showInputDialog(null, "---Ménu---"
+                + "1. Listar Recursos"
+                + "2. Crear Recurso"
+                + "3. Eliminar Recurso"
+                + "4. Modificar Recurso"
+                + "5. Salir"));
+        while (opc != 5){
+            switch (opc){
+                case 1:{///Listar Recursos
+                
+                }break;
+                
+                case 2:{////Crear Recurso
+                
+                }break;
+                
+                case 3:{///Eliminar Recurso
+                
+                }break;
+                
+                case 4:{///Modificar Recurso
+                
+                }break;
+                
+                case 5:{////Salir
+                
+                }break;
+                
+            }
+        }
+            
     }
     
 }
