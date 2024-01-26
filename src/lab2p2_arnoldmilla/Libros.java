@@ -56,6 +56,11 @@ public class Libros {
         return publicacion;
     }
     
+   @Override
+    public String toString(){
+        return "Titulo: " + titulo + "autor: " + autor + "genero :" + genero + "disponibilidad :" + disponibilidad + "fecha de publicacion: " + publicacion;
+    }
+    
     
     
 }
