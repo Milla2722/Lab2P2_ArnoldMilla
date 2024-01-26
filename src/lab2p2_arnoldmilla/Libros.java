@@ -5,10 +5,9 @@ import java.util.Date;
 
 
 public class Libros {
-    private String titulo, autor, genero,disponibilidad;
-    private Date publicacion;
+    private String titulo, autor, genero,disponibilidad, publicacion;
     
-    public Libros(String titulo, String autor, String genero, String disponibilidad, Date publicacion){
+    public Libros(String titulo, String autor, String genero, String disponibilidad, String publicacion){
         this.titulo = titulo;
         this.autor = autor;
         this.genero = genero;
@@ -48,17 +47,17 @@ public class Libros {
         return disponibilidad;
     }
     
-    public void setPublicacion(Date publicacion){
+    public void setPublicacion(String publicacion){
         this.publicacion = publicacion;
     }
     
-    public Date getPublicacion(){
+    public String getPublicacion(){
         return publicacion;
     }
     
    @Override
     public String toString(){
-        return "Titulo: " + titulo + "autor: " + autor + "genero :" + genero + "disponibilidad :" + disponibilidad + "fecha de publicacion: " + publicacion;
+        return "Titulo: " + titulo + " autor: " + autor + " genero :" + genero + " disponibilidad :" + disponibilidad + " fecha de publicacion: " + publicacion;
     }
     
     
