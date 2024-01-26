@@ -33,7 +33,7 @@ public class Lab2P2_ArnoldMilla {
                         }break;
                         
                         case 2:{//Agregar un articulo
-                        
+                            
                         }break;
                         
                         case 3:{// agregar un curso en linea

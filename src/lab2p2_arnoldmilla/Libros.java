@@ -1,8 +1,5 @@
 package lab2p2_arnoldmilla;
 
-import java.util.ArrayList;
-import java.util.Date;
-
 
 public class Libros {
     private String titulo, autor, genero,disponibilidad, publicacion;
