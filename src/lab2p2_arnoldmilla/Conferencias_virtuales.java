@@ -5,6 +5,14 @@ package lab2p2_arnoldmilla;
 public class Conferencias_virtuales {
     private String titulo, conferencista, fecha, duracion, enlace;
     
+    public Conferencias_virtuales(String titulo, String conferencista, String fecha, String duracion, String enlace){
+        this.titulo = titulo;
+        this.conferencista = conferencista;
+        this.fecha = fecha;
+        this.duracion = duracion;
+        this.enlace = enlace;
+    }
+    
     public void setTitulo(String titulo){
         this.titulo = titulo;
     }

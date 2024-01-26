@@ -3,6 +3,13 @@ package lab2p2_arnoldmilla;
 public class Cursos_en_línea {
     private String titulo, instructor, duracion, plataforma;
     
+    public Cursos_en_línea(String titulo, String instructor, String duracion, String plataforma){
+        this.titulo = titulo;
+        this.instructor = instructor;
+        this.duracion = duracion;
+        this.plataforma = plataforma;
+    }
+    
     public void setTitulo(String titulo){
         this.titulo = titulo;
     }

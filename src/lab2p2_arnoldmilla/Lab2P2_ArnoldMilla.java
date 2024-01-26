@@ -33,15 +33,30 @@ public class Lab2P2_ArnoldMilla {
                         }break;
                         
                         case 2:{//Agregar un articulo
-                            
+                            String titulo = JOptionPane.showInputDialog(null, "Ingrese el titulo");
+                            String autor = JOptionPane.showInputDialog(null, "Ingrese el nombre del autor");
+                            String tema = JOptionPane.showInputDialog(null, "Ingrese el tema del articulo");
+                            String publicacion = JOptionPane.showInputDialog(null, "Ingrese la fecha de publicacion");
+                            String acceso = JOptionPane.showInputDialog(null, "Ingrese la disponibilidad del libro [si/no]");
+                            Recursos.add(new Artículos(titulo, autor, tema, acceso, publicacion));
                         }break;
                         
                         case 3:{// agregar un curso en linea
-                        
+                            String titulo = JOptionPane.showInputDialog(null, "Ingrese el titulo");
+                            String instructor = JOptionPane.showInputDialog(null, "Ingrese el nombre del instructor");
+                            String plataforma = JOptionPane.showInputDialog(null, "Ingrese la plataforma del curso");
+                            String duracion = JOptionPane.showInputDialog(null, "Ingrese la duracion del curso");
+                            Recursos.add(new Cursos_en_línea(titulo, instructor, duracion, plataforma));
                         }break;
                         
                         case 4:{//conferencia virtual
-                        
+                            String titulo = JOptionPane.showInputDialog(null, "Ingrese el titulo");
+                            String conferencista = JOptionPane.showInputDialog(null, "Ingrese el nombre del conferencista");
+                            String fecha = JOptionPane.showInputDialog(null, "Ingrese la fecha de la conferencia");
+                            String duracion = JOptionPane.showInputDialog(null, "Ingrese la duracion de la conferencia");
+                            String enlace = JOptionPane.showInputDialog(null, "Ingrese el enlace de la conferencia");
+                            Recursos.add(new Conferencias_virtuales(titulo, conferencista, fecha, duracion, enlace));
+
                         }break;
                                               
                     }
@@ -64,7 +79,7 @@ public class Lab2P2_ArnoldMilla {
                     }
                     else{
                         int rec = recurso();
-                        switch (rec){
+                        switch (rec){/////////////El modif lo hace completo no parcial 
                         case 1:{//modif un libro
                             String titulo = JOptionPane.showInputDialog(null, "Ingrese el titulo");
                             String autor = JOptionPane.showInputDialog(null, "Ingrese el nombre del autor");
@@ -75,15 +90,29 @@ public class Lab2P2_ArnoldMilla {
                         }break;
                         
                         case 2:{//modif un articulo
-                        
+                            String titulo = JOptionPane.showInputDialog(null, "Ingrese el titulo");
+                            String autor = JOptionPane.showInputDialog(null, "Ingrese el nombre del autor");
+                            String tema = JOptionPane.showInputDialog(null, "Ingrese el tema del articulo");
+                            String publicacion = JOptionPane.showInputDialog(null, "Ingrese la fecha de publicacion");
+                            String acceso = JOptionPane.showInputDialog(null, "Ingrese la disponibilidad del libro [si/no]");
+                            Recursos.set(pos, new Artículos(titulo, autor, tema, acceso, publicacion));
                         }break;
                         
                         case 3:{//modif un curso en linea
-                        
+                            String titulo = JOptionPane.showInputDialog(null, "Ingrese el titulo");
+                            String instructor = JOptionPane.showInputDialog(null, "Ingrese el nombre del instructor");
+                            String plataforma = JOptionPane.showInputDialog(null, "Ingrese la plataforma del curso");
+                            String duracion = JOptionPane.showInputDialog(null, "Ingrese la duracion del curso");
+                            Recursos.set(pos, new Cursos_en_línea(titulo, instructor, duracion, plataforma));
                         }break;
                         
                         case 4:{//modif una conferencia virtual
-                        
+                            String titulo = JOptionPane.showInputDialog(null, "Ingrese el titulo");
+                            String conferencista = JOptionPane.showInputDialog(null, "Ingrese el nombre del conferencista");
+                            String fecha = JOptionPane.showInputDialog(null, "Ingrese la fecha de la conferencia");
+                            String duracion = JOptionPane.showInputDialog(null, "Ingrese la duracion de la conferencia");
+                            String enlace = JOptionPane.showInputDialog(null, "Ingrese el enlace de la conferencia");
+                            Recursos.set(pos, new Conferencias_virtuales(titulo, conferencista, fecha, duracion, enlace));
                         }break;
                                               
                         }
