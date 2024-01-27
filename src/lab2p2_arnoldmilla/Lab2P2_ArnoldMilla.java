@@ -160,7 +160,7 @@ public class Lab2P2_ArnoldMilla {
                                        
                 }break;
                 
-            }
+            }///switch de la opcion
                 opc = Integer.parseInt(JOptionPane.showInputDialog(null, "-----------Ménu----------\n"
                 + "1. Listar Recursos \n"
                 + "2. Crear Recurso \n"
@@ -173,6 +173,7 @@ public class Lab2P2_ArnoldMilla {
             
     }
     
+    ///funcion para hacer print de un arraylist
     public static String PrintRecursos(ArrayList Recursos){
         String rec = "";
                     for (int contador = 0; contador < Recursos.size(); contador++) {
@@ -180,7 +181,7 @@ public class Lab2P2_ArnoldMilla {
                     }
         return rec;
     }
-    
+    ///////funcion para poder elegir que clase usar
     public static Integer recurso(){
         int recurso = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el tipo de recurso que quiere ingresar \n"
                             + "1. Libro \n"
